@@ -7,7 +7,7 @@
 3. [Running](#running)
 4. [Repository Structure](#repo)
 6. [Model](#model)
-7. [Results](#results)
+7. [Result](#results)
 
 
 ## 💻 About project <a name="about"></a>
@@ -99,7 +99,7 @@ It is also possible to realize a Grid Search at the code, adding the desired par
 
  Note, that if you add a lot of parameters you have to have a robust setup to run the code.
 
-## 📝 Results <a name="results"></a>
+## 📝 Result <a name="results"></a>
 
 The result found using XGBoost and the features looks for above:
 
