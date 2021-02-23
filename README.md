@@ -101,21 +101,8 @@ It is also possible to realize a Grid Search at the code, adding the desired par
 
 ## 📝 Results <a name="results"></a>
 
-It was used the weighted-average F1-score to compare between the models.
-This metric can be found using the function `classification_report`.
+The result found using XGBoost and the features looks for above:
 
-There were 4 trials:
-1. Using CountVectorizer, TfidTransformer and RandomForest named as RandomForest.
-2. Using CountVectorizer, TfidTransformer and XGBClassifier named as XGBoost.
-3. Using CountVectorizer, TfidTransformer, CountPosTagTransformer for verb, noun, adjective and pronoun
- and XGBClassifier named as XGBoost_More_Features.
-4. The same features and model from XGBoost_More_Features and running grid search named as XGBoost_CV.
-
-The Results are shown below.
-
-| Trial                | weighted-average F1-score | 
-| ---------------------| --------------------------| 
-| XGBoost_More_Features| 0.938832                  |
-| XGBoost_CV           | 0.938327                  |
-| XGBoost              | 0.937866                  |
-| RandomForest         | 0.935922                  |
+| Model   | weighted-average F1-score | 
+| --------| --------------------------| 
+| XGBoost | 0.938832 |

@@ -97,7 +97,10 @@ def build_model():
              extractor_transformers.CountPosTagTransformer('NN'))
         ])),
 
-        ('clf', MultiOutputClassifier(XGBClassifier(eval_metric="logloss")))
+        ('clf', MultiOutputClassifier(XGBClassifier(eval_metric="logloss",
+                                                    gpu_id=0,
+                                                    tree_method='gpu_hist',
+                                                    predictor='gpu_predictor')))
     ])
 
     parameters = {
